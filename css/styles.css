@@ -1,0 +1,126 @@
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  color: #f1f1f1;
+  background: #34353b;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.nav {
+  min-height: 40px;
+  padding: 8px 16px;
+  background: #212529;
+}
+
+.nav .nav-brand {
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.container {
+  padding: 20px 0;
+}
+
+.container .row {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 1280px;
+}
+
+.container .row.padded {
+  padding: 0 0 40px 0;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #545b62;
+  border-color: #4e555b;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.dropdown, .dropup {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: .255em;
+  vertical-align: .255em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: .5rem 0;
+  margin: .125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+}
+
+/** Local **/
+#main {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#deck {
+  padding: 0 10px;
+  width: 1260px;
+  height: 100px;
+  border: 1px dotted #f1f1f1;
+}
+
+#deck .card {
+  width: 100px;
+  height: 100px;
+  float: right;
+}

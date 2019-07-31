@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" value="IE=9">
+  <title>Knights Landing | Share Arknights Plan</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" type="application/x-javascript"></script>
+
+  <!-- First party code -->
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script src="js/consts.js" type="application/x-javascript"></script>
+  <script src="js/hash.js" type="application/x-javascript"></script>
+  <script src="js/renderable.js" type="application/x-javascript"></script>
+  <script src="js/map-loader.js" type="application/x-javascript"></script>
+  <script src="js/main.js" type="application/x-javascript"></script>
+</head>
+<body>
+  <div class="nav">
+    <div class="nav-brand">Knights Landing :: Arknights Level Visualization</div>
+  </div>
+  <div class="container">
+    <div class="row padded">
+      <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" role="button"
+          href="#"
+          id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          {FILLER_TEXT}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">{FILLER}</a>
+        </div>
+      </div>
+    </div>
+    <div class="row padded">
+      <canvas id="main" width="1280" height="720">
+        <p>Yikes! Your brower does not support canvas. This won't work!</p>
+      </canvas>
+    </div>
+    <div id="deck" class="row">
+      <div class="card"></div>
+    </div>
+  </div>
+</body>
+</html>
