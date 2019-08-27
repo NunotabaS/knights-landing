@@ -17,8 +17,10 @@ var HashEncoder = (function () {
         var segments = value.split(separator);
         var output = {};
         for (var i = 0; i < keys.length; i++) {
-          if (i < segments.length) {
+          if (i < keys.length - 1) {
             output[keys[i]] = segments[i];
+          } else if (i === keys.length - 1) {
+            output[keys[i]] = segments.slice(i).join(separator);
           }
         }
         return output;

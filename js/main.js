@@ -4,12 +4,12 @@
   var URL_FORMAT = {
     'keys': ['level', 'wave', 'placement'],
     'parsers': {
-      'level': HashEncoder.POL_LINEAR(':', ['group', 'id']),
+      'level': HashEncoder.POL_LINEAR('_', ['group', 'id']),
       'wave': HashEncoder.POL_LIST('|'),
       'placement': HashEncoder.POL_LINEAR('-', [])
     },
     'defaults': {
-      'level': 'camp:01',
+      'level': 'camp_01',
       'wave': '',
       'placement': ''
     }
@@ -22,7 +22,15 @@
 
   var tracker = new RenderTracker();
   var hasher = new HashEncoder(HashEncoder.POL_LINEAR(',', URL_FORMAT.keys));
-  var _map = null;
+
+  // Game Data
+  var recruits = new Recruits();
+  var stages = new Stages();
+  var map = null;
+
+  // Status
+  var _ready = false;
+
   var renderFrame = function (context) {
     // Draw the background
     context.fillStyle = STYLE.bgColor;
@@ -41,36 +49,40 @@
     hasher.parse();
     var config = hasher.getP(URL_FORMAT.parsers['level'], 'level',
       URL_FORMAT.defaults['level']);
-    var url = `res/${config.group}/level_${config.group}_${config.id}.json`;
+    var stage = `${config.group}_${config.id}`;
+    var stageUrl = `res/maps/${config.group}/level_${stage}.json`;
+
+    // Get the stage metadata
+    try {
+      var currentStage = stages.get(stage);
+      $('dropdownMenuLink').innerText =
+        `${currentStage.code}: ${currentStage.name}`;
+    } catch (e) {
+      $('dropdownMenuLink').innerText = '???';
+    }
 
     // Load the level data
-    fetch(url).then(function (resp) {
-      if (resp.status !== 200) {
-        throw new Error('Web request failed for ' + url +
-          '.\n Status ' + resp.status);
-      }
-      return resp.json();
-    }).then(function (levelData) {
-      map = new Map(levelData['mapData']);
-
-      // Load the overlays
-      map.routeOverlay = new Map.RouteOverlay(
-        levelData['routes'], map.tileWidth, map.tileHeight);
+    return Map.load(stageUrl).then(function (loadedMap) {
+      map = loadedMap;
       var filter = hasher.getP(URL_FORMAT.parsers['wave'],
         'wave', '').filter(function(t){return t !== '';}).map(function (t){
           return parseInt(t);
         });
       map.routeOverlay.visible = filter;
-
       tracker.set('map', map.asRenderable(0, 0, 1280, 720, STYLE));
-      window.map = map;
     }).catch(function (e) {
       alert(e);
+      window.location.hash = '#';
+      window.location.reload();
       throw e;
     });
   }
 
-  window.addEventListener('load', function () {
+  function _populateUI() {
+
+  }
+
+  function _main() {
     // Set up an raf main loop
     var context = $('main').getContext('2d');
 
@@ -88,10 +100,33 @@
     $('main').addEventListener('click', function (e) {
 
     });
-    reloadLevel();
+  }
+
+  function _makeAvailable() {
+    window.map = map;
+    window.recruits = recruits;
+    window.stages = stages;
+  }
+
+  window.addEventListener('load', function () {
+    // Setup the stage
+    Promise.all([
+      recruits.load('res/characters.json', 'res/range.json'),
+      stages.load('res/stages.json')
+    ]).then(function () {
+      // Create the list
+      _populateUI();
+      _main();
+    }).then(function () {
+      return reloadLevel().then(function () {
+        _makeAvailable();
+      });
+    })
   });
 
   window.addEventListener('hashchange', function () {
-    reloadLevel();
-  })
+    reloadLevel().then(function () {
+      _makeAvailable();
+    });
+  });
 })();

@@ -174,9 +174,7 @@ var Map = (function () {
     this.tileHeight = 0;
     this.tiles = [];
 
-    this.routes = [];
-
-    this.load(mapData);
+    this._parse(mapData);
     this.characterOverlay = null;
     this.routeOverlay = null;
   }
@@ -184,7 +182,23 @@ var Map = (function () {
   Map.CharacterOverlay = CharacterOverlay;
   Map.RouteOverlay = RouteOverlay;
 
-  Map.prototype.load = function (mapData, routeData) {
+  Map.load = function (mapfile) {
+    return fetch(mapfile).then(function (resp) {
+      if (resp.status !== 200) {
+        throw new Error('[Map] Web request failed for ' + mapfile +
+          '.\n Status ' + resp.status);
+      }
+      return resp.json();
+    }).then(function (levelData) {
+      var map = new Map(levelData['mapData']);
+      // Set up the routes too
+      map.routeOverlay = new Map.RouteOverlay(levelData['routes'],
+        map.tileWidth, map.tileHeight)
+      return map;
+    });
+  };
+
+  Map.prototype._parse = function (mapData) {
     this.tiles = [];
     this.tileHeight = mapData['map'].length;
     this.tileWidth = mapData['map'][0].length;

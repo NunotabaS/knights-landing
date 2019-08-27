@@ -1,0 +1,1047 @@
+{
+  "stages": {
+    "wk_kc_1": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "LS-1", 
+      "name": "\u906d\u9047\u6218\u6f14\u4e60", 
+      "stageId": "weekly_killcost_1"
+    }, 
+    "wk_kc_3": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "LS-3", 
+      "name": "\u9635\u5730\u6218\u6f14\u4e60", 
+      "stageId": "weekly_killcost_3"
+    }, 
+    "wk_kc_2": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "LS-2", 
+      "name": "\u6e38\u51fb\u6218\u6f14\u4e60", 
+      "stageId": "weekly_killcost_2"
+    }, 
+    "wk_kc_5": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "LS-5", 
+      "name": "\u6b7c\u706d\u6218\u6f14\u4e60", 
+      "stageId": "weekly_killcost_5"
+    }, 
+    "wk_kc_4": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "LS-4", 
+      "name": "\u7279\u79cd\u6218\u6f14\u4e60", 
+      "stageId": "weekly_killcost_4"
+    }, 
+    "sub_05-3-1": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S5-5", 
+      "name": "\u6050\u614c-1", 
+      "stageId": "sub_05-3-1"
+    }, 
+    "sub_05-3-2": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S5-6", 
+      "name": "\u6050\u614c-2", 
+      "stageId": "sub_05-3-2"
+    }, 
+    "pro_d_2": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "PR-D-2", 
+      "name": "\u731b\u653b", 
+      "stageId": "promote_d_2"
+    }, 
+    "pro_d_1": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "PR-D-1", 
+      "name": "\u7a81\u7834", 
+      "stageId": "promote_d_1"
+    }, 
+    "main_03-01": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "3-1", 
+      "name": "\u4f1a\u5408", 
+      "stageId": "main_03-01"
+    }, 
+    "sub_02-01": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "S2-1", 
+      "name": "\u8fdf\u7f13-1", 
+      "stageId": "sub_02-01"
+    }, 
+    "sub_02-03": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "S2-3", 
+      "name": "\u5c01\u9501-1", 
+      "stageId": "sub_02-03"
+    }, 
+    "sub_02-02": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "S2-2", 
+      "name": "\u8fdf\u7f13-2", 
+      "stageId": "sub_02-02"
+    }, 
+    "sub_02-05": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "S2-5", 
+      "name": "\u672f\u5e08-1", 
+      "stageId": "sub_02-05"
+    }, 
+    "sub_02-04": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "S2-4", 
+      "name": "\u5c01\u9501-2", 
+      "stageId": "sub_02-04"
+    }, 
+    "sub_02-07": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "S2-7", 
+      "name": "\u672f\u5e08-3", 
+      "stageId": "sub_02-07"
+    }, 
+    "sub_02-06": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "S2-6", 
+      "name": "\u672f\u5e08-2", 
+      "stageId": "sub_02-06"
+    }, 
+    "sub_02-09": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "S2-9", 
+      "name": "\u9677\u9631-2", 
+      "stageId": "sub_02-09"
+    }, 
+    "sub_02-08": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "S2-8", 
+      "name": "\u9677\u9631-1", 
+      "stageId": "sub_02-08"
+    }, 
+    "main_02-10": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "2-10", 
+      "name": "\u75c5\u5165\u818f\u8093", 
+      "stageId": "main_02-10"
+    }, 
+    "sub_04-3-1": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S4-7", 
+      "name": "\u72c2\u6012-1", 
+      "stageId": "sub_04-3-1"
+    }, 
+    "sub_04-3-2": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S4-8", 
+      "name": "\u72c2\u6012-2", 
+      "stageId": "sub_04-3-2"
+    }, 
+    "sub_04-3-3": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S4-9", 
+      "name": "\u72c2\u6012-3", 
+      "stageId": "sub_04-3-3"
+    }, 
+    "sub_04-1-2": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S4-2", 
+      "name": "\u6676\u7c07-2", 
+      "stageId": "sub_04-1-2"
+    }, 
+    "sub_04-1-3": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S4-3", 
+      "name": "\u6676\u7c07-3", 
+      "stageId": "sub_04-1-3"
+    }, 
+    "sub_04-1-1": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S4-1", 
+      "name": "\u6676\u7c07-1", 
+      "stageId": "sub_04-1-1"
+    }, 
+    "main_05-02": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "5-2", 
+      "name": "\u6709\u53e3\u96be\u8a00", 
+      "stageId": "main_05-02"
+    }, 
+    "main_05-03": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "5-3", 
+      "name": "\u4e49\u80c6\u51e1\u8eaf", 
+      "stageId": "main_05-03"
+    }, 
+    "main_05-01": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "5-1", 
+      "name": "\u51a4\u5bb6\u6613\u7ed3", 
+      "stageId": "main_05-01"
+    }, 
+    "main_05-06": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "5-6", 
+      "name": "\u7591\u5175\u4e4b\u8ba1", 
+      "stageId": "main_05-06"
+    }, 
+    "main_05-07": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "5-7", 
+      "name": "\u751f\u6b7b\u4e0e\u5171", 
+      "stageId": "main_05-07"
+    }, 
+    "main_05-04": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "5-4", 
+      "name": "\u6ca1\u4eba\u5728\u5bb6", 
+      "stageId": "main_05-04"
+    }, 
+    "main_05-05": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "5-5", 
+      "name": "\u8fde\u7ef5\u6218\u706b", 
+      "stageId": "main_05-05"
+    }, 
+    "main_03-08": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "3-8", 
+      "name": "\u9ec4\u660f", 
+      "stageId": "main_03-08"
+    }, 
+    "main_05-08": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "5-8", 
+      "name": "\u4e86\u5982\u6307\u638c", 
+      "stageId": "main_05-08"
+    }, 
+    "main_05-09": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "5-9", 
+      "name": "\u5b7d\u751f\u6076\u7269", 
+      "stageId": "main_05-09"
+    }, 
+    "main_01-09": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "1-9", 
+      "name": "\u6e83\u6563", 
+      "stageId": "main_01-09"
+    }, 
+    "sub_02-12": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "S2-12", 
+      "name": "\u7a92\u606f-3", 
+      "stageId": "sub_02-12"
+    }, 
+    "sub_02-10": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "S2-10", 
+      "name": "\u7a92\u606f-1", 
+      "stageId": "sub_02-10"
+    }, 
+    "sub_02-11": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "S2-11", 
+      "name": "\u7a92\u606f-2", 
+      "stageId": "sub_02-11"
+    }, 
+    "main_04-10": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "4-10", 
+      "name": "\u706f\u706b\u5c06\u7184", 
+      "stageId": "main_04-10"
+    }, 
+    "pro_c_1": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "PR-C-1", 
+      "name": "\u6025\u884c", 
+      "stageId": "promote_c_1"
+    }, 
+    "main_05-10": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "5-10", 
+      "name": "\u957f\u591c\u7ec8\u5c3d", 
+      "stageId": "main_05-10"
+    }, 
+    "pro_c_2": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "PR-C-2", 
+      "name": "\u51b2\u950b", 
+      "stageId": "promote_c_2"
+    }, 
+    "main_01-08": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "1-8", 
+      "name": "\u610f\u5fd7", 
+      "stageId": "main_01-08"
+    }, 
+    "sub_03-2-2": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S3-4", 
+      "name": "\u4fa6\u5bdf-2", 
+      "stageId": "sub_03-2-2"
+    }, 
+    "sub_03-2-3": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S3-5", 
+      "name": "\u4fa6\u5bdf-3", 
+      "stageId": "sub_03-2-3"
+    }, 
+    "sub_03-2-1": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S3-3", 
+      "name": "\u4fa6\u5bdf-1", 
+      "stageId": "sub_03-2-1"
+    }, 
+    "sub_05-2-2": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S5-4", 
+      "name": "\u6076\u5bd2-2", 
+      "stageId": "sub_05-2-2"
+    }, 
+    "main_03-02": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "3-2", 
+      "name": "\u8bb0\u5fc6", 
+      "stageId": "main_03-02"
+    }, 
+    "main_04-09": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "4-9", 
+      "name": "\u5f7b\u5165\u9aa8\u9ad3", 
+      "stageId": "main_04-09"
+    }, 
+    "main_04-08": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "4-8", 
+      "name": "\u5e94\u6fc0\u53cd\u5e94", 
+      "stageId": "main_04-08"
+    }, 
+    "camp_03": {
+      "stageType": "CAMPAIGN", 
+      "difficulty": "NORMAL", 
+      "code": "\u527f\u706d\u4f5c\u6218", 
+      "name": "\u9f99\u95e8\u5e02\u533a", 
+      "stageId": "camp_03"
+    }, 
+    "camp_02": {
+      "stageType": "CAMPAIGN", 
+      "difficulty": "NORMAL", 
+      "code": "\u527f\u706d\u4f5c\u6218", 
+      "name": "\u9f99\u95e8\u5916\u73af", 
+      "stageId": "camp_02"
+    }, 
+    "main_04-05": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "4-5", 
+      "name": "\u5b98\u50da\u4e3b\u4e49", 
+      "stageId": "main_04-05"
+    }, 
+    "main_04-04": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "4-4", 
+      "name": "\u4e0d\u8981\u6050\u614c", 
+      "stageId": "main_04-04"
+    }, 
+    "main_04-07": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "4-7", 
+      "name": "\u5404\u53d6\u6240\u9700", 
+      "stageId": "main_04-07"
+    }, 
+    "main_04-06": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "4-6", 
+      "name": "\u5c11\u89c1\u591a\u602a", 
+      "stageId": "main_04-06"
+    }, 
+    "main_04-01": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "4-1", 
+      "name": "\u514d\u8d39\u62e5\u62b1", 
+      "stageId": "main_04-01"
+    }, 
+    "main_04-03": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "4-3", 
+      "name": "\u4eba\u5de5\u5236\u51b7", 
+      "stageId": "main_04-03"
+    }, 
+    "main_04-02": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "4-2", 
+      "name": "\u96e8\u4e2d\u6f2b\u6b65", 
+      "stageId": "main_04-02"
+    }, 
+    "hard_05-02": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "H5-2", 
+      "name": "\u70bc\u72f1\u884c\u52a8-2", 
+      "stageId": "hard_05-02"
+    }, 
+    "hard_05-03": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "H5-3", 
+      "name": "\u70bc\u72f1\u884c\u52a8-3", 
+      "stageId": "hard_05-03"
+    }, 
+    "hard_05-01": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "H5-1", 
+      "name": "\u70bc\u72f1\u884c\u52a8-1", 
+      "stageId": "hard_05-01"
+    }, 
+    "hard_05-04": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "H5-4", 
+      "name": "\u70bc\u72f1\u884c\u52a8-4", 
+      "stageId": "hard_05-04"
+    }, 
+    "main_00-10": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "0-10", 
+      "name": "\u56f0\u5883", 
+      "stageId": "main_00-10"
+    }, 
+    "main_00-11": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "0-11", 
+      "name": "\u7a81\u56f4", 
+      "stageId": "main_00-11"
+    }, 
+    "sub_04-2-1": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S4-4", 
+      "name": "\u591a\u8db3-1", 
+      "stageId": "sub_04-2-1"
+    }, 
+    "sub_04-2-3": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S4-6", 
+      "name": "\u591a\u8db3-3", 
+      "stageId": "sub_04-2-3"
+    }, 
+    "sub_04-2-2": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S4-5", 
+      "name": "\u591a\u8db3-2", 
+      "stageId": "sub_04-2-2"
+    }, 
+    "sub_05-2-1": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S5-3", 
+      "name": "\u6076\u5bd2-1", 
+      "stageId": "sub_05-2-1"
+    }, 
+    "sub_03-1-1": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S3-1", 
+      "name": "\u6f5c\u4f0f-1", 
+      "stageId": "sub_03-1-1"
+    }, 
+    "main_00-09": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "0-9", 
+      "name": "\u4e34\u5149", 
+      "stageId": "main_00-09"
+    }, 
+    "main_00-08": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "0-8", 
+      "name": "\u72e9\u730e", 
+      "stageId": "main_00-08"
+    }, 
+    "sub_03-1-2": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S3-2", 
+      "name": "\u6f5c\u4f0f-2", 
+      "stageId": "sub_03-1-2"
+    }, 
+    "main_00-01": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "0-1", 
+      "name": "\u574d\u584c", 
+      "stageId": "main_00-01"
+    }, 
+    "main_00-03": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "0-3", 
+      "name": "\u8ffd\u51fb", 
+      "stageId": "main_00-03"
+    }, 
+    "main_00-02": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "0-2", 
+      "name": "\u5b88\u536b", 
+      "stageId": "main_00-02"
+    }, 
+    "main_00-05": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "0-5", 
+      "name": "\u8150\u5316", 
+      "stageId": "main_00-05"
+    }, 
+    "pro_a_2": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "PR-A-2", 
+      "name": "\u636e\u5b88", 
+      "stageId": "promote_a_2"
+    }, 
+    "pro_a_1": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "PR-A-1", 
+      "name": "\u9632\u5b88", 
+      "stageId": "promote_a_1"
+    }, 
+    "main_00-06": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "0-6", 
+      "name": "\u5f3a\u51fb", 
+      "stageId": "main_00-06"
+    }, 
+    "pro_b_1": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "PR-B-1", 
+      "name": "\u5e72\u6d89", 
+      "stageId": "promote_b_1"
+    }, 
+    "pro_b_2": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "PR-B-2", 
+      "name": "\u6253\u51fb", 
+      "stageId": "promote_b_2"
+    }, 
+    "camp_01": {
+      "stageType": "CAMPAIGN", 
+      "difficulty": "NORMAL", 
+      "code": "\u527f\u706d\u4f5c\u6218", 
+      "name": "\u5207\u5c14\u8bfa\u4f2f\u683c", 
+      "stageId": "camp_01"
+    }, 
+    "main_03-04": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "3-4", 
+      "name": "\u9f9f\u88c2", 
+      "stageId": "main_03-04"
+    }, 
+    "main_03-05": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "3-5", 
+      "name": "\u547c\u53eb", 
+      "stageId": "main_03-05"
+    }, 
+    "main_03-06": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "3-6", 
+      "name": "\u51b3\u5b9a", 
+      "stageId": "main_03-06"
+    }, 
+    "main_03-07": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "3-7", 
+      "name": "\u8f70\u9e23", 
+      "stageId": "main_03-07"
+    }, 
+    "sub_05-1-2": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S5-2", 
+      "name": "\u76d8\u8e1e-2", 
+      "stageId": "sub_05-1-2"
+    }, 
+    "sub_05-1-1": {
+      "stageType": "SUB", 
+      "difficulty": "NORMAL", 
+      "code": "S5-1", 
+      "name": "\u76d8\u8e1e-1", 
+      "stageId": "sub_05-1-1"
+    }, 
+    "main_03-03": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "3-3", 
+      "name": "\u56de\u65cb", 
+      "stageId": "main_03-03"
+    }, 
+    "wk_fly_1": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "CA-1", 
+      "name": "\u7597\u517b\u7528\u5730\u51c0\u7a7a", 
+      "stageId": "weekly_fly_1"
+    }, 
+    "wk_fly_3": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "CA-3", 
+      "name": "\u5de1\u903b\u8def\u7ebf\u51c0\u7a7a", 
+      "stageId": "weekly_fly_3"
+    }, 
+    "wk_fly_2": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "CA-2", 
+      "name": "\u52d8\u63a2\u57fa\u70b9\u51c0\u7a7a", 
+      "stageId": "weekly_fly_2"
+    }, 
+    "wk_fly_5": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "CA-5", 
+      "name": "\u6218\u7565\u8981\u9053\u51c0\u7a7a", 
+      "stageId": "weekly_fly_5"
+    }, 
+    "wk_fly_4": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "CA-4", 
+      "name": "\u4efb\u52a1\u533a\u57df\u51c0\u7a7a", 
+      "stageId": "weekly_fly_4"
+    }, 
+    "main_00-04": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "0-4", 
+      "name": "\u6df7\u6218", 
+      "stageId": "main_00-04"
+    }, 
+    "wk_toxic_5": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "AP-5", 
+      "name": "\u7cbe\u70bc\u5de5\u5382\u4fdd\u5168", 
+      "stageId": "weekly_toxic_5"
+    }, 
+    "wk_toxic_4": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "AP-4", 
+      "name": "\u77ff\u6750\u4ed3\u5e93\u4fdd\u5168", 
+      "stageId": "weekly_toxic_4"
+    }, 
+    "wk_toxic_1": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "AP-1", 
+      "name": "\u6e90\u77f3\u5f00\u91c7\u4fdd\u5168", 
+      "stageId": "weekly_toxic_1"
+    }, 
+    "main_00-07": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "0-7", 
+      "name": "\u611f\u67d3", 
+      "stageId": "main_00-07"
+    }, 
+    "wk_toxic_3": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "AP-3", 
+      "name": "\u7cbe\u70bc\u5668\u6750\u4fdd\u5168", 
+      "stageId": "weekly_toxic_3"
+    }, 
+    "wk_toxic_2": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "AP-2", 
+      "name": "\u6e90\u77f3\u8fd0\u8f93\u4fdd\u5168", 
+      "stageId": "weekly_toxic_2"
+    }, 
+    "main_01-06": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "1-6", 
+      "name": "\u707e\u96be", 
+      "stageId": "main_01-06"
+    }, 
+    "main_01-07": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "1-7", 
+      "name": "\u66b4\u541b", 
+      "stageId": "main_01-07"
+    }, 
+    "main_01-04": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "1-4", 
+      "name": "\u5148\u5146", 
+      "stageId": "main_01-04"
+    }, 
+    "main_01-05": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "1-5", 
+      "name": "\u9ebb\u75f9", 
+      "stageId": "main_01-05"
+    }, 
+    "main_01-02": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "1-2", 
+      "name": "\u8513\u5ef6", 
+      "stageId": "main_01-02"
+    }, 
+    "main_01-03": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "1-3", 
+      "name": "\u72c2\u5954", 
+      "stageId": "main_01-03"
+    }, 
+    "main_01-01": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "1-1", 
+      "name": "\u5b64\u5c9b", 
+      "stageId": "main_01-01"
+    }, 
+    "wk_melee_1": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "CE-1", 
+      "name": "\u79c1\u4eba\u5bb6\u5177\u62bc\u8fd0", 
+      "stageId": "weekly_melee_1"
+    }, 
+    "wk_melee_2": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "CE-2", 
+      "name": "\u5de5\u4e1a\u8bbe\u5907\u62bc\u8fd0", 
+      "stageId": "weekly_melee_2"
+    }, 
+    "wk_melee_3": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "CE-3", 
+      "name": "\u73cd\u8d35\u539f\u6599\u62bc\u8fd0", 
+      "stageId": "weekly_melee_3"
+    }, 
+    "wk_melee_4": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "CE-4", 
+      "name": "\u56fd\u9645\u91cd\u72af\u62bc\u8fd0", 
+      "stageId": "weekly_melee_4"
+    }, 
+    "wk_melee_5": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "CE-5", 
+      "name": "\u673a\u5bc6\u60c5\u62a5\u62bc\u8fd0", 
+      "stageId": "weekly_melee_5"
+    }, 
+    "wk_armor_1": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "SK-1", 
+      "name": "\u5e9f\u589f\u6e05\u527f", 
+      "stageId": "weekly_armor_1"
+    }, 
+    "wk_armor_3": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "SK-3", 
+      "name": "\u54e8\u6240\u6e05\u527f", 
+      "stageId": "weekly_armor_3"
+    }, 
+    "wk_armor_2": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "SK-2", 
+      "name": "\u7a9d\u70b9\u6e05\u527f", 
+      "stageId": "weekly_armor_2"
+    }, 
+    "wk_armor_5": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "SK-5", 
+      "name": "\u8981\u585e\u6e05\u527f", 
+      "stageId": "weekly_armor_5"
+    }, 
+    "wk_armor_4": {
+      "stageType": "DAILY", 
+      "difficulty": "NORMAL", 
+      "code": "SK-4", 
+      "name": "\u636e\u5730\u6e05\u527f", 
+      "stageId": "weekly_armor_4"
+    }, 
+    "tr_15": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "TR-15", 
+      "name": "\u6218\u7565\u8f6c\u79fb", 
+      "stageId": "training_15"
+    }, 
+    "tr_14": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "TR-14", 
+      "name": "\u5730\u5f62\u653b\u52bf", 
+      "stageId": "training_14"
+    }, 
+    "tr_13": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "TR-13", 
+      "name": "\u5148\u53d1\u5236\u4eba", 
+      "stageId": "training_13"
+    }, 
+    "tr_12": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "TR-12", 
+      "name": "\u65bd\u672f\u5355\u5143", 
+      "stageId": "training_12"
+    }, 
+    "tr_11": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "TR-11", 
+      "name": "\u6218\u672f\u963b\u6ede", 
+      "stageId": "training_11"
+    }, 
+    "tr_10": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "TR-10", 
+      "name": "\u5c0f\u961f\u9632\u5fa1", 
+      "stageId": "training_10"
+    }, 
+    "main_02-09": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "2-9", 
+      "name": "\u64cd\u4f5c\u6697\u7bb1", 
+      "stageId": "main_02-09"
+    }, 
+    "main_02-08": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "2-8", 
+      "name": "\u4e0d\u505a\u7ea6\u5b9a", 
+      "stageId": "main_02-08"
+    }, 
+    "main_02-07": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "2-7", 
+      "name": "\u6ce8\u610f\u536b\u751f", 
+      "stageId": "main_02-07"
+    }, 
+    "main_02-06": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "2-6", 
+      "name": "\u63e1\u7d27\u6276\u624b", 
+      "stageId": "main_02-06"
+    }, 
+    "main_02-05": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "2-5", 
+      "name": "\u9ad8\u7a7a\u5760\u7269", 
+      "stageId": "main_02-05"
+    }, 
+    "main_02-04": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "2-4", 
+      "name": "\u4f01\u9e45\u7269\u6d41", 
+      "stageId": "main_02-04"
+    }, 
+    "main_02-03": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "2-3", 
+      "name": "\u65e0\u7f6a\u63a8\u5b9a", 
+      "stageId": "main_02-03"
+    }, 
+    "main_02-02": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "2-2", 
+      "name": "\u5175\u4e0d\u63a5\u5203", 
+      "stageId": "main_02-02"
+    }, 
+    "main_02-01": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "2-1", 
+      "name": "\u9f99\u95e8\u4e4b\u884c", 
+      "stageId": "main_02-01"
+    }, 
+    "main_01-11": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "1-11", 
+      "name": "\u9057\u5fd8", 
+      "stageId": "main_01-11"
+    }, 
+    "main_01-10": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "1-10", 
+      "name": "\u6b8b\u7559", 
+      "stageId": "main_01-10"
+    }, 
+    "main_01-12": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "1-12", 
+      "name": "\u4ee3\u4ef7", 
+      "stageId": "main_01-12"
+    }, 
+    "tr_08": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "TR-8", 
+      "name": "\u969c\u788d\u8bbe\u7f6e", 
+      "stageId": "training_8"
+    }, 
+    "tr_09": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "TR-9", 
+      "name": "\u95f4\u63a5\u9632\u62a4", 
+      "stageId": "training_9"
+    }, 
+    "tr_01": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "TR-1", 
+      "name": "\u6218\u5730\u533b\u7597\u00a0", 
+      "stageId": "training_1"
+    }, 
+    "tr_02": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "TR-2", 
+      "name": "\u5b9a\u5411\u7784\u51c6", 
+      "stageId": "training_2"
+    }, 
+    "tr_03": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "TR-3", 
+      "name": "\u7cbe\u786e\u6253\u51fb", 
+      "stageId": "training_3"
+    }, 
+    "tr_04": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "TR-4", 
+      "name": "\u5c0f\u961f\u5148\u950b", 
+      "stageId": "training_4"
+    }, 
+    "tr_05": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "TR-5", 
+      "name": "\u6e90\u77f3\u6280\u827a", 
+      "stageId": "training_5"
+    }, 
+    "tr_06": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "TR-6", 
+      "name": "\u8303\u56f4\u6740\u4f24", 
+      "stageId": "training_6"
+    }, 
+    "tr_07": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "TR-7", 
+      "name": "\u6218\u6597\u6280\u5de7", 
+      "stageId": "training_7"
+    }, 
+    "st_05-01": {
+      "stageType": "MAIN", 
+      "difficulty": "NORMAL", 
+      "code": "5-11", 
+      "name": "\u68cb\u80dc\u540e\u7740", 
+      "stageId": "st_05-01"
+    }
+  }
+}
