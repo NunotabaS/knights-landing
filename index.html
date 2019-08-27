@@ -9,9 +9,12 @@
   <!-- First party code -->
 
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/cards.css" />
 
   <script src="js/hash.js" type="application/x-javascript"></script>
   <script src="js/renderable.js" type="application/x-javascript"></script>
+  <script src="js/dropdown.js" type="application/x-javascript"></script>
+
   <script src="js/recruits-loader.js" type="application/x-javascript"></script>
   <script src="js/stages-loader.js" type="application/x-javascript"></script>
   <script src="js/map-loader.js" type="application/x-javascript"></script>
@@ -25,24 +28,23 @@
     <div class="row padded">
       <div class="dropdown">
         <a class="btn btn-secondary dropdown-toggle" role="button"
-          href="#"
-          id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          id="stage-selector" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
-          {FILLER_TEXT}
+          {STAGE_NAME}
         </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="#">{FILLER}</a>
+        <div id="stage-list" class="dropdown-menu"
+          aria-labelledby="dropdownMenuLink">
         </div>
       </div>
     </div>
-    <div class="row padded">
+    <div class="row centered">
       <canvas id="main" width="1280" height="720">
         <p>Yikes! Your brower does not support canvas. This won't work!</p>
       </canvas>
     </div>
     <div id="deck" class="row">
-      <div class="card"></div>
     </div>
+    <div></div>
   </div>
 </body>
 </html>

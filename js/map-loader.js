@@ -57,12 +57,12 @@ var Map = (function () {
       // Ground level
       if (this.type === 'tile_hole') {
         ctx.strokeStyle = '#94959b';
-        ctx.lineWidth = 2;
+        ctx.lineWidth = 4;
         var r = (Math.min(w, h) - 8) / 2;
         _circle(ctx, x + r + 4, y + r + 4, r);
       } else if (this.buildable === 0) {
         ctx.strokeStyle = '#94959b';
-        ctx.lineWidth = 2;
+        ctx.lineWidth = 4;
         ctx.setLineDash([10, 10]);
         ctx.strokeRect(x + 4, y + 4, w - 8, h - 8);
       }
@@ -74,16 +74,90 @@ var Map = (function () {
     ctx.save();
     ctx.lineWidth = 2;
     ctx.strokeStyle = this.getEdgeColor(ctx);
-    ctx.strokeRect(x + 2, y + 2, edgeLen - 8, edgeLen - 8);
+    ctx.strokeRect(x + 4, y + 4, edgeLen - 8, edgeLen - 8);
     ctx.fillStyle = this.getFill(ctx);
-    ctx.fillRect(x + 4, y + 4, edgeLen - 12, edgeLen - 12);
+    ctx.fillRect(x + 6, y + 6, edgeLen - 12, edgeLen - 12);
 
-    this.renderInside(ctx, x + 4, y + 4, edgeLen - 12, edgeLen - 12);
+    this.renderInside(ctx, x + 6, y + 6, edgeLen - 12, edgeLen - 12);
 
     ctx.restore();
   }
 
-  function CharacterOverlay () {
+  function AreaOverlay (map) {
+    this.map = map;
+    this.overlays = {};
+    this.tiles = [];
+
+    // Populate the tiles
+    for (var i = 0; i < this.map.tileWidth; i++) {
+      this.tiles.push([]);
+      for (var j = 0; j < this.map.tileHeight; j++) {
+        this.tiles[i].push({
+          'overlays': []
+        });
+      }
+    }
+  }
+
+  AreaOverlay.prototype.removeOverlay = function (name) {
+    if (name in this.overlays) {
+      for (var i = 0; i < this.overlays[name].cells.length; i++) {
+        var cell = this.overlays[name].cells[i];
+        console.log(cell);
+        console.log(this.map.tileWidth);
+        if (cell.row < 0 || cell.col < 0 || cell.row >= this.map.tileHeight ||
+          cell.col >= this.map.tileWidth) {
+          continue;
+        }
+        var idx = this.tiles[cell.col][cell.row].overlays.indexOf(name);
+        this.tiles[cell.col][cell.row].overlays.splice(idx, 1);
+      }
+      // Removed all
+      delete this.overlays[name];
+    }
+  };
+
+  AreaOverlay.prototype.addOverlay = function (
+    name, range, direction, pos, color) {
+
+    if (name in this.overlays) {
+      throw new Error(`[AreaOverlay] Duplicate exists for ${name}`);
+    }
+
+    var cells = range !== null ?
+      range.conformDirection(direction).asCells(pos.row, pos.col) :
+      [pos];
+
+    // Find the absolute coordinates to overlay
+    this.overlays[name] = {
+      'cells': cells,
+      'color': (typeof color === 'string' ? color : '#c0f0c0')
+    };
+    for (var i = 0; i < this.overlays[name].cells.length; i++) {
+      var cell = this.overlays[name].cells[i];
+      if (cell.row < 0 || cell.col < 0 || cell.row >= this.map.tileHeight ||
+        cell.col >= this.map.tileWidth) {
+        continue;
+      }
+      this.tiles[cell.col][cell.row].overlays.push(name);
+    }
+  }
+
+  AreaOverlay.prototype.draw = function (ctx, edgeLen) {
+    ctx.globalAlpha = 0.5;
+
+    for (var col = 0; col < this.map.tileWidth; col++) {
+      for (var row = 0; row < this.map.tileHeight; row++) {
+        for (var i = 0; i < this.tiles[col][row].overlays.length; i++) {
+          var overlay = this.overlays[this.tiles[col][row].overlays[i]];
+          ctx.fillStyle = overlay.color;
+          ctx.fillRect(col * edgeLen, row * edgeLen, edgeLen, edgeLen);
+        }
+      }
+    }
+  }
+
+  function CharacterOverlay (map) {
     this.map = map;
     this.tiles = [];
     // Populate the tiles
@@ -95,13 +169,8 @@ var Map = (function () {
     }
   }
 
-  CharacterOverlay.prototype.draw = function (i, j, ctx, x, y, edgeLen) {
-    if (this.tiles[i][j] !== null) {
-      ctx.save();
-      ctx.globalAlpha = 0.5;
-      this.tiles[i][j].render(ctx, x, y, edgeLen);
-      ctx.restore();
-    }
+  CharacterOverlay.prototype.draw = function (ctx, edgeLen) {
+    // Do nothing
   }
 
   function RouteOverlay (routeData, mapWidth, mapHeight) {
@@ -177,10 +246,12 @@ var Map = (function () {
     this._parse(mapData);
     this.characterOverlay = null;
     this.routeOverlay = null;
+    this.areaOverlay = null;
   }
 
   Map.CharacterOverlay = CharacterOverlay;
   Map.RouteOverlay = RouteOverlay;
+  Map.AreaOverlay = AreaOverlay;
 
   Map.load = function (mapfile) {
     return fetch(mapfile).then(function (resp) {
@@ -191,9 +262,11 @@ var Map = (function () {
       return resp.json();
     }).then(function (levelData) {
       var map = new Map(levelData['mapData']);
-      // Set up the routes too
+      // Set up the overlays
       map.routeOverlay = new Map.RouteOverlay(levelData['routes'],
-        map.tileWidth, map.tileHeight)
+        map.tileWidth, map.tileHeight);
+      map.areaOverlay = new Map.AreaOverlay(map);
+      map.characterOverlay = new Map.CharacterOverlay(map);
       return map;
     });
   };
@@ -222,16 +295,21 @@ var Map = (function () {
       }
     }
     ctx.restore();
-
-    if (this.characterOverlay !== null) {
+    if (this.areaOverlay !== null) {
       ctx.save();
-      this.characterOverlay.draw(ctx, edgeLen);
+      this.areaOverlay.draw(ctx, edgeLen);
       ctx.restore();
     }
 
     if (this.routeOverlay !== null) {
       ctx.save();
       this.routeOverlay.draw(ctx, edgeLen);
+      ctx.restore();
+    }
+
+    if (this.characterOverlay !== null) {
+      ctx.save();
+      this.characterOverlay.draw(ctx, edgeLen);
       ctx.restore();
     }
   }
@@ -252,6 +330,17 @@ var Map = (function () {
     // Create a layable
     var layout = new LayoutRenderable(width, height, renderable);
     return layout;
+  }
+
+  // Dereference a canvas click onto a row-col system
+  Map.prototype.deref = function (position, width, height) {
+    // Get the edge length
+    var edgeLen = Math.round(Math.min(width / this.tileWidth,
+        height / this.tileHeight));
+    return {
+      'col': Math.floor(position.x / edgeLen),
+      'row': Math.floor(position.y / edgeLen)
+    }
   }
   return Map;
 })();

@@ -10,6 +10,12 @@ body {
   text-align: left;
 }
 
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
 .nav {
   min-height: 40px;
   padding: 8px 16px;
@@ -39,6 +45,9 @@ body {
 
 .container .row.padded {
   padding: 0 0 40px 0;
+}
+.container .row.centered {
+  text-align: center;
 }
 
 .btn {
@@ -104,6 +113,30 @@ body {
   background-clip: padding-box;
   border: 1px solid rgba(0,0,0,.15);
   border-radius: .25rem;
+  overflow: hidden;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: .25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #f8f9fa;
 }
 
 /** Local **/
@@ -113,14 +146,20 @@ body {
 }
 
 #deck {
-  padding: 0 10px;
-  width: 1260px;
-  height: 100px;
+  padding: 0 6px;
+  width: 1248px;
+  height: 104px;
   border: 1px dotted #f1f1f1;
 }
 
 #deck .card {
-  width: 100px;
+  width: 90px;
   height: 100px;
+  border: 1px dotted #f1f1f1;
+  margin: 1px;
+  padding: 0 5px;
   float: right;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
 }

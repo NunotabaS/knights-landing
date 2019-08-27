@@ -4,6 +4,13 @@ var HashEncoder = (function () {
     this._values = {};
   };
 
+  HashEncoder.POL_JSON = function (data) {
+    return {
+      'encode': function (data) { return JSON.strinfigy(data); },
+      'decode': function (value) { return JSON.parse(data); }
+    }
+  };
+
   HashEncoder.POL_LIST = function (separator) {
     return {
       'encode': function (data) { return data.join(separator); },
@@ -39,8 +46,8 @@ var HashEncoder = (function () {
     };
   }
 
-  HashEncoder.prototype.parse = function () {
-    var hashStr = window.location.hash;
+  HashEncoder.prototype.parse = function (hash) {
+    var hashStr = (typeof hash === 'string') ? hash : window.location.hash;
     if (hashStr.length === 0) {
       return;
     }
@@ -77,6 +84,12 @@ var HashEncoder = (function () {
   HashEncoder.prototype.encode = function () {
     return '#' + this._policy.encode(this._values);
   };
+
+  HashEncoder.prototype.clone = function () {
+    var cloned = new HashEncoder(this._policy);
+    cloned.parse(this.encode());
+    return cloned;
+  }
 
   return HashEncoder;
 })();

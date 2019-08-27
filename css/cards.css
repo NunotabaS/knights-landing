@@ -1,0 +1,30 @@
+#deck .card.p-caster {
+  background-image: url(img/profession-caster.png);
+}
+#deck .card.p-medic {
+  background-image: url(img/profession-medic.png);
+}
+#deck .card.p-pioneer {
+  background-image: url(img/profession-vanguard.png);
+}
+#deck .card.p-sniper {
+  background-image: url(img/profession-sniper.png);
+}
+#deck .card.p-special {
+  background-image: url(img/profession-specialist.png);
+}
+#deck .card.p-support {
+  background-image: url(img/profession-support.png);
+}
+#deck .card.p-tank {
+  background-image: url(img/profession-defender.png);
+}
+#deck .card.p-warrior {
+  background-image: url(img/profession-guard.png);
+}
+
+/* Special non-character things */
+#deck .card.p-token {
+}
+#deck .card.p-trap {
+}

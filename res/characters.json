@@ -1,4 +1,21 @@
 {
+  "char_348_ceylon": {
+    "appellation": "Ceylon", 
+    "phases": [
+      {
+        "rangeId": "3-3"
+      }, 
+      {
+        "rangeId": "3-4"
+      }, 
+      {
+        "rangeId": "3-4"
+      }
+    ], 
+    "profession": "MEDIC", 
+    "name": "\u9521\u5170", 
+    "rarity": 4
+  }, 
   "char_140_whitew": {
     "appellation": "Lappland", 
     "phases": [
@@ -183,22 +200,22 @@
     "name": "\u585e\u96f7\u5a05", 
     "rarity": 5
   }, 
-  "char_128_plosis": {
-    "appellation": "Ptilopsis", 
+  "char_172_svrash": {
+    "appellation": "SilverAsh", 
     "phases": [
       {
-        "rangeId": "y-1"
+        "rangeId": "2-3"
       }, 
       {
-        "rangeId": "y-2"
+        "rangeId": "3-12"
       }, 
       {
-        "rangeId": "y-2"
+        "rangeId": "3-12"
       }
     ], 
-    "profession": "MEDIC", 
-    "name": "\u767d\u9762\u9e2e", 
-    "rarity": 4
+    "profession": "WARRIOR", 
+    "name": "\u94f6\u7070", 
+    "rarity": 5
   }, 
   "token_10004_otter_motter": {
     "appellation": "Mibo", 
@@ -334,6 +351,40 @@
     "profession": "TRAP", 
     "name": "\u969c\u788d\u7269", 
     "rarity": 0
+  }, 
+  "char_340_shwaz": {
+    "appellation": "Schwarz", 
+    "phases": [
+      {
+        "rangeId": "2-3"
+      }, 
+      {
+        "rangeId": "3-6"
+      }, 
+      {
+        "rangeId": "3-6"
+      }
+    ], 
+    "profession": "SNIPER", 
+    "name": "\u9ed1", 
+    "rarity": 5
+  }, 
+  "char_298_susuro": {
+    "appellation": "Sussurro", 
+    "phases": [
+      {
+        "rangeId": "3-1"
+      }, 
+      {
+        "rangeId": "3-3"
+      }, 
+      {
+        "rangeId": "3-3"
+      }
+    ], 
+    "profession": "MEDIC", 
+    "name": "\u82cf\u82cf\u6d1b", 
+    "rarity": 3
   }, 
   "char_106_franka": {
     "appellation": "Franka", 
@@ -503,6 +554,23 @@
     "profession": "TANK", 
     "name": "\u5361\u7f07", 
     "rarity": 2
+  }, 
+  "char_326_glacus": {
+    "appellation": "Glaucus", 
+    "phases": [
+      {
+        "rangeId": "y-2"
+      }, 
+      {
+        "rangeId": "y-2"
+      }, 
+      {
+        "rangeId": "y-2"
+      }
+    ], 
+    "profession": "SUPPORT", 
+    "name": "\u683c\u52b3\u514b\u65af", 
+    "rarity": 4
   }, 
   "char_164_nightm": {
     "appellation": "Nightmare", 
@@ -1074,22 +1142,22 @@
     "name": "\u8299\u84c9", 
     "rarity": 2
   }, 
-  "char_172_svrash": {
-    "appellation": "SilverAsh", 
+  "char_128_plosis": {
+    "appellation": "Ptilopsis", 
     "phases": [
       {
-        "rangeId": "2-3"
+        "rangeId": "y-1"
       }, 
       {
-        "rangeId": "3-12"
+        "rangeId": "y-2"
       }, 
       {
-        "rangeId": "3-12"
+        "rangeId": "y-2"
       }
     ], 
-    "profession": "WARRIOR", 
-    "name": "\u94f6\u7070", 
-    "rarity": 5
+    "profession": "MEDIC", 
+    "name": "\u767d\u9762\u9e2e", 
+    "rarity": 4
   }, 
   "char_109_fmout": {
     "appellation": "Gitano", 
