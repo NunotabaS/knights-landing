@@ -37,9 +37,6 @@
   var stages = new Stages();
   var map = null;
 
-  // Status
-  var _ready = false;
-
   var renderFrame = function (context) {
     // Clear the background
     context.clearRect(0, 0, 1280, 720);
@@ -129,10 +126,10 @@
       if (operator !== null) {
         map.areaOverlay.removeOverlay(operator.id + '_self');
         map.areaOverlay.addOverlay(operator.id + '_self',
-          null, 1, cell, '#ffff00');
+          null, cell.direction, cell, '#ffff00');
         map.areaOverlay.removeOverlay(operator.id);
         map.areaOverlay.addOverlay(operator.id,
-          operator._range, 1, cell);
+          operator._range, cell.direction, cell);
       }
       mapRenderable.invalidate();
     });

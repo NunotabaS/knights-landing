@@ -103,8 +103,6 @@ var Map = (function () {
     if (name in this.overlays) {
       for (var i = 0; i < this.overlays[name].cells.length; i++) {
         var cell = this.overlays[name].cells[i];
-        console.log(cell);
-        console.log(this.map.tileWidth);
         if (cell.row < 0 || cell.col < 0 || cell.row >= this.map.tileHeight ||
           cell.col >= this.map.tileWidth) {
           continue;
@@ -337,9 +335,21 @@ var Map = (function () {
     // Get the edge length
     var edgeLen = Math.round(Math.min(width / this.tileWidth,
         height / this.tileHeight));
+    // Figure out the direction
+    var row = Math.floor(position.y / edgeLen),
+      col = Math.floor(position.x / edgeLen);
+    var inX = (position.x - col * edgeLen) / edgeLen - 0.5,
+      inY = (position.y - row * edgeLen) / edgeLen - 0.5;
+    var direction = 1;
+    if (Math.abs(inY) > Math.abs(inX)) {
+      direction = inY > 0 ? 2 : 0;
+    } else {
+      direction = inX > 0 ? 1 : 3;
+    }
     return {
-      'col': Math.floor(position.x / edgeLen),
-      'row': Math.floor(position.y / edgeLen)
+      'col': col,
+      'row': row,
+      'direction': direction
     }
   }
   return Map;

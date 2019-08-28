@@ -32,10 +32,23 @@ var Recruits = (function () {
    * Returns new range object that conforms to the new direction
    **/
   Range.prototype.conformDirection = function (direction) {
-    if (this._direction === direction) {
-      return this;
-    } else {
+    // Figure out how many clockwise rotations we need
+    var rotations = (direction - this._direction + 4) % 4;
+    var grid = this._grid;
+    while (rotations > 0) {
+      // Apply a clockwise rotation
+      grid = grid.map(function (item) {
+        return {
+          'row': item.col,
+          'col': - item.row
+        }
+      });
+      rotations --;
     }
+    return new Range({
+      'direction': direction,
+      'grids': grid
+    });
   }
 
   Range.prototype.asCells = function (row, col) {
