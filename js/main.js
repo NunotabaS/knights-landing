@@ -35,7 +35,8 @@
   // Game Data
   var recruits = new Recruits();
   var stages = new Stages();
-  var map = null;
+  var currentMap = null;
+  var currentLevel = null;
 
   var renderFrame = function (context) {
     // Clear the background
@@ -67,15 +68,15 @@
       $('stage-selector').innerText = '???';
     }
 
+    // Reset the slider
+    $('wave-selector').value = -0.1;
+
     // Load the level data
-    return Map.load(stageUrl).then(function (loadedMap) {
-      map = loadedMap;
-      var filter = hasher.getP(URL_FORMAT.parsers['wave'],
-        'wave', '').filter(function(t){return t !== '';}).map(function (t){
-          return parseInt(t);
-        });
-      map.routeOverlay.visible = filter;
-      tracker.set('map', map.asRenderable(0, 0, 1280, 720, STYLE));
+    return Level.load(stageUrl).then(function (level) {
+      $('wave-selector').setAttribute('max', level._maxEmitTime + 0.1);
+      tracker.set('map', level.map.asRenderable(0, 0, 1280, 720, STYLE));
+      currentMap = level.map;
+      currentLevel = level;
     }).catch(function (e) {
       alert(e);
       window.location.hash = '';
@@ -101,6 +102,24 @@
       recruits.addToHand(id, 1, 1, 100);
       recruits.renderHand();
     });
+    // Bind the slider event
+    $('wave-selector').addEventListener('input', function (e) {
+      var val = typeof e.target.value === 'number' ? e.target.value :
+        parseFloat(e.target.value);
+      if (currentLevel !== null && currentMap !== null) {
+        if (currentMap.routeOverlay !== null) {
+          currentMap.routeOverlay.visible =
+            currentLevel.findRoutes(val).map(function (r) {
+              return r['route'];
+            });
+          console.log(currentMap.routeOverlay.visible);
+          var mapRenderable = tracker.get('map');
+          if (typeof mapRenderable !== 'undefined' && mapRenderable !== null) {
+            mapRenderable.invalidate();
+          }
+        }
+      }
+    });
   }
 
   function _main() {
@@ -124,11 +143,11 @@
       var cell = map.deref(pos, 1280, 720);
       var operator = recruits._dragging;
       if (operator !== null) {
-        map.areaOverlay.removeOverlay(operator.id + '_self');
-        map.areaOverlay.addOverlay(operator.id + '_self',
+        currentMap.areaOverlay.removeOverlay(operator.id + '_self');
+        currentMap.areaOverlay.addOverlay(operator.id + '_self',
           null, cell.direction, cell, '#ffff00');
-        map.areaOverlay.removeOverlay(operator.id);
-        map.areaOverlay.addOverlay(operator.id,
+        currentMap.areaOverlay.removeOverlay(operator.id);
+        currentMap.areaOverlay.addOverlay(operator.id,
           operator._range, cell.direction, cell);
       }
       mapRenderable.invalidate();
@@ -139,13 +158,14 @@
   }
 
   function _makeAvailable() {
-    window.map = map;
+    window.map = currentMap;
+    window.level = currentLevel;
     window.recruits = recruits;
     window.stages = stages;
     window.tracker = tracker;
     window.placeFromHand = function (charId, row, col) {
       var char = recruits.getHandCharacter(charId);
-      map.areaOverlay.addOverlay(charId,
+      currentMap.areaOverlay.addOverlay(charId,
         char._range, 1, {'row': row, 'col': col});
       tracker.invalidate();
     }

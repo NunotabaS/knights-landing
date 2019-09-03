@@ -70,7 +70,7 @@ var LayoutRenderable = (function () {
       'x': Math.min(Math.max(x - this._xOffset, 0),
         this._width - this._xOffset),
       'y': Math.min(Math.max(y - this._yOffset, 0),
-        this._height  - this._yOffset)
+        this._height - this._yOffset)
     };
   }
   return LayoutRenderable;

@@ -9,6 +9,7 @@ mkdir res/maps/
 # Clone the repo with game data
 git clone --depth 1 https://github.com/Perfare/ArknightsGameData.git game_data
 cp -r game_data/levels/obt/* res/maps
+cp -r game_data/levels/activities/* res/maps
 
 # adjust some names
 rm -rf res/maps/camp

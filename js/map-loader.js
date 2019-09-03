@@ -142,6 +142,7 @@ var Map = (function () {
   }
 
   AreaOverlay.prototype.draw = function (ctx, edgeLen) {
+    ctx.save();
     ctx.globalAlpha = 0.5;
 
     for (var col = 0; col < this.map.tileWidth; col++) {
@@ -153,6 +154,7 @@ var Map = (function () {
         }
       }
     }
+    ctx.restore();
   }
 
   function CharacterOverlay (map) {
@@ -171,12 +173,18 @@ var Map = (function () {
     // Do nothing
   }
 
-  function RouteOverlay (routeData, mapWidth, mapHeight) {
+  function RouteOverlay (map) {
+    this.map = map;
     this.routes = [];
     this.visible = [];
+  }
+
+  RouteOverlay.prototype.setRoutes = function (routeData) {
+    this.routes = [];
     // Populate the routes
     routeData.forEach((function (route) {
-      var record = {}
+      var record = {};
+      var map = this.map;
       if (route === null) {
         record.mode = -1;
         this.routes.push(record);
@@ -186,18 +194,18 @@ var Map = (function () {
       record.checkpoints = route.checkpoints.map(function (point) {
         return {
           type: point.type,
-          h: mapHeight - point.position.row - 1,
+          h: map.tileHeight - point.position.row - 1,
           w: point.position.col
         }
       });
       record.checkpoints.push({
         type: 0,
-        h: mapHeight - route.endPosition.row - 1,
+        h: map.tileHeight - route.endPosition.row - 1,
         w: route.endPosition.col
       });
 
       record.start = {
-        h: mapHeight - route.startPosition.row - 1,
+        h: map.tileHeight - route.startPosition.row - 1,
         w: route.startPosition.col
       }
       this.routes.push(record);
@@ -205,11 +213,11 @@ var Map = (function () {
   }
 
   RouteOverlay.prototype.draw = function (ctx, edgeLen) {
-    ctx.globalAlpha = 0.8;
-    ctx.strokeStyle = 'rgb(209, 44, 54)';
-    ctx.lineWidth = 4;
     this.visible.forEach((function (routeId) {
       ctx.save();
+      ctx.globalAlpha = 0.8;
+      ctx.strokeStyle = 'rgb(209, 44, 54)';
+      ctx.lineWidth = 4;
       if (routeId < this.routes.length) {
         var route = this.routes[routeId];
         if (route.mode < 0) {
@@ -251,23 +259,13 @@ var Map = (function () {
   Map.RouteOverlay = RouteOverlay;
   Map.AreaOverlay = AreaOverlay;
 
-  Map.load = function (mapfile) {
-    return fetch(mapfile).then(function (resp) {
-      if (resp.status !== 200) {
-        throw new Error('[Map] Web request failed for ' + mapfile +
-          '.\n Status ' + resp.status);
-      }
-      return resp.json();
-    }).then(function (levelData) {
-      var map = new Map(levelData['mapData']);
-      // Set up the overlays
-      map.routeOverlay = new Map.RouteOverlay(levelData['routes'],
-        map.tileWidth, map.tileHeight);
-      map.areaOverlay = new Map.AreaOverlay(map);
-      map.characterOverlay = new Map.CharacterOverlay(map);
-      return map;
-    });
-  };
+  Map.load = function (mapData) {
+    var map = new Map(mapData);
+    map.areaOverlay = new Map.AreaOverlay(map);
+    map.characterOverlay = new Map.CharacterOverlay(map);
+    map.routeOverlay = new Map.RouteOverlay(map);
+    return Promise.resolve(map);
+  }
 
   Map.prototype._parse = function (mapData) {
     this.tiles = [];
@@ -285,6 +283,7 @@ var Map = (function () {
 
   Map.prototype.draw = function (ctx, edgeLen) {
     ctx.save();
+    ctx.globalAlpha = 1;
     // Render the tiles
     for (var h = 0; h < this.tileHeight; h++) {
       for (var w = 0; w < this.tileWidth; w++) {

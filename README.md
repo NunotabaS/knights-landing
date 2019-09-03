@@ -1,5 +1,6 @@
 # knights-landing
 Share battle strategies on Arknights by sharing the URL.
+Game data based on [Perfare/ArknightsGameData](https://github.com/Perfare/ArknightsGameData)
 
 ## Building
 To rebuild the project with the latest extracted game data files, run:
