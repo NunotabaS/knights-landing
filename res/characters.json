@@ -16,6 +16,17 @@
     "name": "\u9521\u5170", 
     "rarity": 4
   }, 
+  "char_503_rang": {
+    "appellation": "Rangers", 
+    "phases": [
+      {
+        "rangeId": "3-1"
+      }
+    ], 
+    "profession": "SNIPER", 
+    "name": "\u5de1\u6797\u8005", 
+    "rarity": 1
+  }, 
   "char_140_whitew": {
     "appellation": "Lappland", 
     "phases": [
@@ -234,16 +245,22 @@
     "name": "\u673a\u68b0\u6c34\u736d", 
     "rarity": 4
   }, 
-  "char_503_rang": {
-    "appellation": "Rangers", 
+  "char_151_myrtle": {
+    "appellation": "Myrtle", 
     "phases": [
       {
-        "rangeId": "3-1"
+        "rangeId": "1-1"
+      }, 
+      {
+        "rangeId": "1-1"
+      }, 
+      {
+        "rangeId": "1-1"
       }
     ], 
-    "profession": "SNIPER", 
-    "name": "\u5de1\u6797\u8005", 
-    "rarity": 1
+    "profession": "PIONEER", 
+    "name": "\u6843\u91d1\u5a18", 
+    "rarity": 3
   }, 
   "char_115_headbr": {
     "appellation": "\u0437\u0438\u043c\u0430", 
@@ -413,6 +430,23 @@
     "profession": "TRAP", 
     "name": "\u4fa6\u6d4b\u5668", 
     "rarity": 0
+  }, 
+  "char_188_helage": {
+    "appellation": "Hellagur", 
+    "phases": [
+      {
+        "rangeId": "1-1"
+      }, 
+      {
+        "rangeId": "1-1"
+      }, 
+      {
+        "rangeId": "1-1"
+      }
+    ], 
+    "profession": "WARRIOR", 
+    "name": "\u8d6b\u62c9\u683c", 
+    "rarity": 5
   }, 
   "char_281_popka": {
     "appellation": "Popukar", 
@@ -980,6 +1014,23 @@
     "profession": "WARRIOR", 
     "name": "\u827e\u4e1d\u9edb\u5c14", 
     "rarity": 3
+  }, 
+  "char_274_astesi": {
+    "appellation": "Astesia", 
+    "phases": [
+      {
+        "rangeId": "1-1"
+      }, 
+      {
+        "rangeId": "1-1"
+      }, 
+      {
+        "rangeId": "1-1"
+      }
+    ], 
+    "profession": "WARRIOR", 
+    "name": "\u661f\u6781", 
+    "rarity": 4
   }, 
   "char_193_frostl": {
     "appellation": "Frostleaf", 
