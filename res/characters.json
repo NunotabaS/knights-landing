@@ -44,6 +44,20 @@
     "name": "\u62c9\u666e\u5170\u5fb7", 
     "rarity": 4
   }, 
+  "char_240_wyvern": {
+    "appellation": "Vanilla", 
+    "phases": [
+      {
+        "rangeId": "1-1"
+      }, 
+      {
+        "rangeId": "1-1"
+      }
+    ], 
+    "profession": "PIONEER", 
+    "name": "\u9999\u8349", 
+    "rarity": 2
+  }, 
   "char_215_mantic": {
     "appellation": "Manticore", 
     "phases": [
@@ -62,7 +76,7 @@
     "rarity": 4
   }, 
   "char_196_sunbr": {
-    "appellation": "\u0413\u0423\u041c", 
+    "appellation": "\u0413\u0443\u043c", 
     "phases": [
       {
         "rangeId": "0-1"
@@ -112,6 +126,23 @@
     "name": "\u8d6b\u9ed8", 
     "rarity": 4
   }, 
+  "char_279_excu": {
+    "appellation": "Executor", 
+    "phases": [
+      {
+        "rangeId": "2-4"
+      }, 
+      {
+        "rangeId": "2-5"
+      }, 
+      {
+        "rangeId": "2-5"
+      }
+    ], 
+    "profession": "SNIPER", 
+    "name": "\u9001\u846c\u4eba", 
+    "rarity": 4
+  }, 
   "char_308_swire": {
     "appellation": "Swire", 
     "phases": [
@@ -128,6 +159,23 @@
     "profession": "WARRIOR", 
     "name": "\u8bd7\u6000\u96c5", 
     "rarity": 4
+  }, 
+  "char_260_durnar": {
+    "appellation": "Dur-nar", 
+    "phases": [
+      {
+        "rangeId": "0-1"
+      }, 
+      {
+        "rangeId": "0-1"
+      }, 
+      {
+        "rangeId": "0-1"
+      }
+    ], 
+    "profession": "TANK", 
+    "name": "\u575a\u96f7", 
+    "rarity": 3
   }, 
   "char_192_falco": {
     "appellation": "Plume", 
@@ -211,22 +259,56 @@
     "name": "\u585e\u96f7\u5a05", 
     "rarity": 5
   }, 
-  "char_172_svrash": {
-    "appellation": "SilverAsh", 
+  "char_128_plosis": {
+    "appellation": "Ptilopsis", 
     "phases": [
       {
-        "rangeId": "2-3"
+        "rangeId": "y-1"
       }, 
       {
-        "rangeId": "3-12"
+        "rangeId": "y-2"
       }, 
       {
-        "rangeId": "3-12"
+        "rangeId": "y-2"
       }
     ], 
-    "profession": "WARRIOR", 
-    "name": "\u94f6\u7070", 
-    "rarity": 5
+    "profession": "MEDIC", 
+    "name": "\u767d\u9762\u9e2e", 
+    "rarity": 4
+  }, 
+  "char_275_breeze": {
+    "appellation": "Breeze", 
+    "phases": [
+      {
+        "rangeId": "y-1"
+      }, 
+      {
+        "rangeId": "y-2"
+      }, 
+      {
+        "rangeId": "y-2"
+      }
+    ], 
+    "profession": "MEDIC", 
+    "name": "\u5fae\u98ce", 
+    "rarity": 4
+  }, 
+  "char_190_clour": {
+    "appellation": "Vermeil", 
+    "phases": [
+      {
+        "rangeId": "3-1"
+      }, 
+      {
+        "rangeId": "3-3"
+      }, 
+      {
+        "rangeId": "3-3"
+      }
+    ], 
+    "profession": "SNIPER", 
+    "name": "\u7ea2\u4e91", 
+    "rarity": 3
   }, 
   "token_10004_otter_motter": {
     "appellation": "Mibo", 
@@ -263,7 +345,7 @@
     "rarity": 3
   }, 
   "char_115_headbr": {
-    "appellation": "\u0437\u0438\u043c\u0430", 
+    "appellation": "\u0417\u0438\u043c\u0430", 
     "phases": [
       {
         "rangeId": "1-1"
@@ -324,23 +406,6 @@
     "name": "\u6e05\u9053\u592b", 
     "rarity": 3
   }, 
-  "char_144_red": {
-    "appellation": "Projekt Red", 
-    "phases": [
-      {
-        "rangeId": "1-1"
-      }, 
-      {
-        "rangeId": "1-1"
-      }, 
-      {
-        "rangeId": "1-1"
-      }
-    ], 
-    "profession": "SPECIAL", 
-    "name": "\u7ea2", 
-    "rarity": 4
-  }, 
   "char_185_frncat": {
     "appellation": "Mousse", 
     "phases": [
@@ -358,6 +423,40 @@
     "name": "\u6155\u65af", 
     "rarity": 3
   }, 
+  "char_144_red": {
+    "appellation": "Projekt Red", 
+    "phases": [
+      {
+        "rangeId": "1-1"
+      }, 
+      {
+        "rangeId": "1-1"
+      }, 
+      {
+        "rangeId": "1-1"
+      }
+    ], 
+    "profession": "SPECIAL", 
+    "name": "\u7ea2", 
+    "rarity": 4
+  }, 
+  "char_243_waaifu": {
+    "appellation": "Waai Fu", 
+    "phases": [
+      {
+        "rangeId": "1-1"
+      }, 
+      {
+        "rangeId": "1-1"
+      }, 
+      {
+        "rangeId": "1-1"
+      }
+    ], 
+    "profession": "SPECIAL", 
+    "name": "\u69d0\u7425", 
+    "rarity": 4
+  }, 
   "trap_001_crate": {
     "appellation": "Crate", 
     "phases": [
@@ -368,6 +467,23 @@
     "profession": "TRAP", 
     "name": "\u969c\u788d\u7269", 
     "rarity": 0
+  }, 
+  "char_325_bison": {
+    "appellation": "Bison", 
+    "phases": [
+      {
+        "rangeId": "0-1"
+      }, 
+      {
+        "rangeId": "0-1"
+      }, 
+      {
+        "rangeId": "0-1"
+      }
+    ], 
+    "profession": "TANK", 
+    "name": "\u62dc\u677e", 
+    "rarity": 4
   }, 
   "char_340_shwaz": {
     "appellation": "Schwarz", 
@@ -420,16 +536,22 @@
     "name": "\u8299\u5170\u5361", 
     "rarity": 4
   }, 
-  "trap_005_sensor": {
-    "appellation": "Detector", 
+  "char_241_panda": {
+    "appellation": "FEater", 
     "phases": [
       {
-        "rangeId": null
+        "rangeId": "1-1"
+      }, 
+      {
+        "rangeId": "1-1"
+      }, 
+      {
+        "rangeId": "1-1"
       }
     ], 
-    "profession": "TRAP", 
-    "name": "\u4fa6\u6d4b\u5668", 
-    "rarity": 0
+    "profession": "SPECIAL", 
+    "name": "\u98df\u94c1\u517d", 
+    "rarity": 4
   }, 
   "char_188_helage": {
     "appellation": "Hellagur", 
@@ -623,22 +745,16 @@
     "name": "\u591c\u9b54", 
     "rarity": 4
   }, 
-  "char_241_panda": {
-    "appellation": "FEater", 
+  "trap_005_sensor": {
+    "appellation": "Detector", 
     "phases": [
       {
-        "rangeId": "1-1"
-      }, 
-      {
-        "rangeId": "1-1"
-      }, 
-      {
-        "rangeId": "1-1"
+        "rangeId": null
       }
     ], 
-    "profession": "SPECIAL", 
-    "name": "\u98df\u94c1\u517d", 
-    "rarity": 4
+    "profession": "TRAP", 
+    "name": "\u4fa6\u6d4b\u5668", 
+    "rarity": 0
   }, 
   "token_10003_cgbird_bird": {
     "appellation": "Cage", 
@@ -689,6 +805,23 @@
     ], 
     "profession": "SUPPORT", 
     "name": "\u7a7a", 
+    "rarity": 4
+  }, 
+  "char_131_flameb": {
+    "appellation": "Flamebringer", 
+    "phases": [
+      {
+        "rangeId": "1-1"
+      }, 
+      {
+        "rangeId": "1-1"
+      }, 
+      {
+        "rangeId": "1-1"
+      }
+    ], 
+    "profession": "WARRIOR", 
+    "name": "\u708e\u5ba2", 
     "rarity": 4
   }, 
   "char_286_cast3": {
@@ -854,6 +987,23 @@
     "name": "\u5929\u706b", 
     "rarity": 4
   }, 
+  "char_248_mgllan": {
+    "appellation": "Magallan", 
+    "phases": [
+      {
+        "rangeId": "3-6"
+      }, 
+      {
+        "rangeId": "3-1"
+      }, 
+      {
+        "rangeId": "3-1"
+      }
+    ], 
+    "profession": "SUPPORT", 
+    "name": "\u9ea6\u54f2\u4f26", 
+    "rarity": 5
+  }, 
   "char_117_myrrh": {
     "appellation": "Myrrh", 
     "phases": [
@@ -888,8 +1038,8 @@
     "name": "\u9668\u661f", 
     "rarity": 4
   }, 
-  "char_198_blackd": {
-    "appellation": "Courier", 
+  "char_290_vigna": {
+    "appellation": "Vigna", 
     "phases": [
       {
         "rangeId": "1-1"
@@ -902,7 +1052,7 @@
       }
     ], 
     "profession": "PIONEER", 
-    "name": "\u8baf\u4f7f", 
+    "name": "\u7ea2\u8c46", 
     "rarity": 3
   }, 
   "char_236_rope": {
@@ -955,6 +1105,17 @@
     "profession": "WARRIOR", 
     "name": "\u65af\u5361\u8482", 
     "rarity": 5
+  }, 
+  "trap_009_battery": {
+    "appellation": "Portable Supply", 
+    "phases": [
+      {
+        "rangeId": "1-1"
+      }
+    ], 
+    "profession": "TRAP", 
+    "name": "\u4fbf\u643a\u5f0f\u8865\u7ed9\u7ad9", 
+    "rarity": 0
   }, 
   "char_500_noirc": {
     "appellation": "Noir Corne", 
@@ -1145,6 +1306,23 @@
     "name": "\u5b89\u8d5b\u5c14", 
     "rarity": 2
   }, 
+  "char_355_ethan": {
+    "appellation": "Ethan", 
+    "phases": [
+      {
+        "rangeId": "y-1"
+      }, 
+      {
+        "rangeId": "y-1"
+      }, 
+      {
+        "rangeId": "y-1"
+      }
+    ], 
+    "profession": "SPECIAL", 
+    "name": "\u4f0a\u6851", 
+    "rarity": 3
+  }, 
   "char_145_prove": {
     "appellation": "Provence", 
     "phases": [
@@ -1179,6 +1357,23 @@
     "name": "\u80fd\u5929\u4f7f", 
     "rarity": 5
   }, 
+  "char_133_mm": {
+    "appellation": "May", 
+    "phases": [
+      {
+        "rangeId": "3-1"
+      }, 
+      {
+        "rangeId": "3-3"
+      }, 
+      {
+        "rangeId": "3-3"
+      }
+    ], 
+    "profession": "SNIPER", 
+    "name": "\u6885", 
+    "rarity": 3
+  }, 
   "char_120_hibisc": {
     "appellation": "Hibiscus", 
     "phases": [
@@ -1193,22 +1388,22 @@
     "name": "\u8299\u84c9", 
     "rarity": 2
   }, 
-  "char_128_plosis": {
-    "appellation": "Ptilopsis", 
+  "char_172_svrash": {
+    "appellation": "SilverAsh", 
     "phases": [
       {
-        "rangeId": "y-1"
+        "rangeId": "2-3"
       }, 
       {
-        "rangeId": "y-2"
+        "rangeId": "3-12"
       }, 
       {
-        "rangeId": "y-2"
+        "rangeId": "3-12"
       }
     ], 
-    "profession": "MEDIC", 
-    "name": "\u767d\u9762\u9e2e", 
-    "rarity": 4
+    "profession": "WARRIOR", 
+    "name": "\u94f6\u7070", 
+    "rarity": 5
   }, 
   "char_109_fmout": {
     "appellation": "Gitano", 
@@ -1244,6 +1439,17 @@
     "name": "\u521d\u96ea", 
     "rarity": 4
   }, 
+  "trap_008_farm": {
+    "appellation": "CT-01", 
+    "phases": [
+      {
+        "rangeId": null
+      }
+    ], 
+    "profession": "TRAP", 
+    "name": "\u6307\u6325\u7ec8\u7aef", 
+    "rarity": 0
+  }, 
   "char_009_12fce": {
     "appellation": "12F", 
     "phases": [
@@ -1272,8 +1478,8 @@
     "name": "\u84dd\u6bd2", 
     "rarity": 4
   }, 
-  "char_290_vigna": {
-    "appellation": "Vigna", 
+  "char_198_blackd": {
+    "appellation": "Courier", 
     "phases": [
       {
         "rangeId": "1-1"
@@ -1286,7 +1492,7 @@
       }
     ], 
     "profession": "PIONEER", 
-    "name": "\u7ea2\u8c46", 
+    "name": "\u8baf\u4f7f", 
     "rarity": 3
   }, 
   "char_010_chen": {
@@ -1441,19 +1647,56 @@
     "name": "\u675c\u5bbe", 
     "rarity": 3
   }, 
-  "char_240_wyvern": {
-    "appellation": "Vanilla", 
+  "token_10005_mgllan_drone1": {
+    "appellation": "DDF Type-F", 
     "phases": [
       {
-        "rangeId": "1-1"
+        "rangeId": "x-4"
       }, 
       {
-        "rangeId": "1-1"
+        "rangeId": "x-4"
+      }, 
+      {
+        "rangeId": "x-4"
       }
     ], 
-    "profession": "PIONEER", 
-    "name": "\u9999\u8349", 
-    "rarity": 2
+    "profession": "TOKEN", 
+    "name": "\u9f99\u817e.F", 
+    "rarity": 5
+  }, 
+  "token_10005_mgllan_drone2": {
+    "appellation": "DDF Type-L", 
+    "phases": [
+      {
+        "rangeId": "0-1"
+      }, 
+      {
+        "rangeId": "0-1"
+      }, 
+      {
+        "rangeId": "0-1"
+      }
+    ], 
+    "profession": "TOKEN", 
+    "name": "\u9f99\u817e.L", 
+    "rarity": 5
+  }, 
+  "token_10005_mgllan_drone3": {
+    "appellation": "DDF Type-A", 
+    "phases": [
+      {
+        "rangeId": "3-6"
+      }, 
+      {
+        "rangeId": "3-6"
+      }, 
+      {
+        "rangeId": "3-6"
+      }
+    ], 
+    "profession": "TOKEN", 
+    "name": "\u9f99\u817e.A", 
+    "rarity": 5
   }, 
   "char_110_deepcl": {
     "appellation": "Deepcolor", 
@@ -1645,6 +1888,23 @@
     ], 
     "profession": "MEDIC", 
     "name": "\u591c\u83ba", 
+    "rarity": 5
+  }, 
+  "char_213_mostma": {
+    "appellation": "Mostima", 
+    "phases": [
+      {
+        "rangeId": "2-3"
+      }, 
+      {
+        "rangeId": "3-6"
+      }, 
+      {
+        "rangeId": "3-6"
+      }
+    ], 
+    "profession": "CASTER", 
+    "name": "\u83ab\u65af\u63d0\u9a6c", 
     "rarity": 5
   }, 
   "token_10001_deepcl_tentac": {
